@@ -1,2 +1,0 @@
-class CameraError(Exception):
-    pass

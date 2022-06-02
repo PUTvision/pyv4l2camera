@@ -1,0 +1,15 @@
+[package]
+name = "pyv4l2camera"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pyv4l2camera"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.2", features = ["extension-module"] }
+numpy = { version = "0.17.2" }
+ndarray = { version = "0.15.4" }
+v4l = { version = "0.13.0", default-features = false, features = ["libv4l"] }
